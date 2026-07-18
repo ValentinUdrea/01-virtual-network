@@ -427,3 +427,34 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Secrets
+.env
+*.key
+*.pem
+*.pfx
+credentials/
+secrets/
+
+# Virtual machines
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.iso
+
+# Network captures and logs
+*.pcap
+*.pcapng
+logs/
+raw-logs/
+
+# Backups
+*.bak
+*.backup
+
+# IDE folders
+.vscode/
+.idea/
