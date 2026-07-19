@@ -46,13 +46,24 @@ Because the processor has four physical cores, the number of simultaneously acti
 
 Larger services such as Active Directory and SIEM will be added gradually. Not every laboratory system will need to run simultaneously.
 
-## Storage Requirements
+## Storage Capacity
 
-The available storage capacity must be verified before the virtual machines are created.
+The host currently provides the following storage capacity:
 
-Recommended free storage:
+| Drive | Total Capacity | Available Space |
+| ----- | -------------: | --------------: |
+| C:    |      1858.8 GB |        835.7 GB |
+| E:    |       476.9 GB |        469.8 GB |
 
-* **Minimum for the initial network lab:** 120 GB
-* **Recommended for future expansion:** 250 GB or more
+The available storage is sufficient for the initial network laboratory and its planned future expansion.
 
-Virtual machine disks, ISO images, snapshots, and raw logs will not be uploaded to GitHub.
+Virtual machines, installation images, exports, and laboratory backups will be stored under:
+
+```text
+E:\Cybersecurity-Homelab
+```
+
+The Git repository will remain separate from the virtual machine storage.
+
+Dynamically allocated virtual disks will be used where possible to reduce initial storage consumption.
+
