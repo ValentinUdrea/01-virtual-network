@@ -52,19 +52,17 @@ Planned technologies include:
 
 ## Project Status
 
-Current stage: Repository setup and network planning.
+Current stage: Initial virtual network operational.
 
-## Repository Structure
+Completed:
 
-```text
-.
-├── README.md
-├── diagrams/
-├── documentation/
-├── configurations/
-├── screenshots/
-└── troubleshooting/
-```
+- Deployed an OPNsense virtual firewall
+- Configured WAN access through VirtualBox NAT
+- Created the isolated `LAB-LAN` internal network
+- Configured the LAN network as `10.10.20.0/24`
+- Enabled DHCP for laboratory systems
+- Deployed an Ubuntu Server virtual machine
+- Validated routing, internet access, DNS, and SSH
 
 ## Security Notice
 
