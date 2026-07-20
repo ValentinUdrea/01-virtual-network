@@ -25,3 +25,18 @@ LAB-LAN
    |
 Ubuntu Server
 10.10.20.x/24
+```
+## Commands Used
+
+The following commands were used to validate the Ubuntu Server network configuration:
+
+```bash
+ip address
+ip route
+ping -c 4 10.10.20.1
+ping -c 4 8.8.8.8
+ping -c 4 ubuntu.com
+sudo systemctl status ssh.socket
+sudo ss -tlnp | grep ':22'
+sudo apt update
+sudo apt upgrade -y
