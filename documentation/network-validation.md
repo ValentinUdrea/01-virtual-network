@@ -40,3 +40,10 @@ sudo systemctl status ssh.socket
 sudo ss -tlnp | grep ':22'
 sudo apt update
 sudo apt upgrade -y
+```
+## Inter-VM Connectivity Test
+
+A Windows 11 client successfully connected to the Ubuntu Server through SSH over the isolated `LAB-LAN` network.
+
+```powershell
+ssh cratos405@10.10.20.186
