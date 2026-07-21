@@ -47,3 +47,19 @@ A Windows 11 client successfully connected to the Ubuntu Server through SSH over
 
 ```powershell
 ssh cratos405@10.10.20.186
+```
+## Windows Firewall Observation
+
+The Windows 11 client could successfully initiate connections to the Ubuntu Server.
+
+The following tests were successful:
+
+- Windows successfully pinged the Ubuntu Server.
+- Windows successfully connected to the Ubuntu Server through SSH.
+- Ubuntu replied to connections initiated by Windows.
+
+The Ubuntu Server could not initiate ICMP echo requests toward the Windows client because inbound ping requests are blocked by Windows Defender Firewall by default.
+
+The Windows firewall was intentionally left unchanged because inbound ICMP traffic was not required for the current laboratory objectives.
+
+This behavior demonstrates that a failed ping does not always indicate a network connectivity problem. Host-based firewall rules can block specific types of inbound traffic while allowing established connections and other services.
