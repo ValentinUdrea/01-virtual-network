@@ -63,3 +63,21 @@ The Ubuntu Server could not initiate ICMP echo requests toward the Windows clien
 The Windows firewall was intentionally left unchanged because inbound ICMP traffic was not required for the current laboratory objectives.
 
 This behavior demonstrates that a failed ping does not always indicate a network connectivity problem. Host-based firewall rules can block specific types of inbound traffic while allowing established connections and other services.
+
+## ATTACK-LAN Segmentation Validation
+
+The Kali Linux attack machine was configured with the following network settings:
+
+- Hostname: ATK-Kali01
+- IP address: 10.10.50.10/24
+- Default gateway: 10.10.50.1
+- Network: ATTACK-LAN
+
+Connectivity tests confirmed:
+
+- Kali can access the internet.
+- Kali can resolve DNS names through OPNsense.
+- Kali cannot access the LAB-LAN network.
+- Traffic from ATTACK-LAN to LAB-LAN is blocked by OPNsense firewall rules.
+
+This confirms that the attacker network is successfully isolated from the internal laboratory network.
