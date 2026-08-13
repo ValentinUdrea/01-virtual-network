@@ -43,8 +43,8 @@ Additional systems will be added in later stages:
 
 Planned technologies include:
 
-* VirtualBox, VMware Workstation, or Proxmox
-* OPNsense or pfSense
+* VirtualBox
+* OPNsense
 * Windows 11
 * Ubuntu Server
 * Kali Linux
