@@ -64,8 +64,3 @@ Completed:
 - Deployed an Ubuntu Server virtual machine
 - Validated routing, internet access, DNS, and SSH
 
-## Security Notice
-
-This laboratory is intended only for authorized learning and testing.
-
-Attack simulations will be performed exclusively inside isolated virtual networks. Sensitive files, credentials, virtual machine disks, raw logs, and private network captures will not be uploaded to this repository.
